@@ -1,15 +1,15 @@
-// to add logging,validation,guardrails,or custom logic at any point in the agent loop,use hooks
-hooks enables use cases such as 
-monitoring the agent
-modifying the tool execution
-adding valiation and error handling
-debuggin complex orchestration patterns
+# // to add logging,validation,guardrails,or custom logic at any point in the agent loop,use hooks
+# hooks enables use cases such as 
+# monitoring the agent
+# modifying the tool execution
+# adding valiation and error handling
+# debuggin complex orchestration patterns
 
 
-guardrails are safety controls that sit between users and ai models to keep behaviour safe,accurate,and within definite boundaries
+# guardrails are safety controls that sit between users and ai models to keep behaviour safe,accurate,and within definite boundaries
 
 
-building a rate limiter hook
+# building a rate limiter hook
 
 from strands import Agent
 from strands.hooks import(

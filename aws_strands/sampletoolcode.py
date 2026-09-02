@@ -1,9 +1,9 @@
 from strands import tool
-//this is a random tool for an agent which looks up customers,check orders and processes refunds 
-//the @tool is called as docstring and the tool returns a string which becomes the tool result fed back into the agent loop
-@tool //making our function as tool by mentioning this tag meaning the agent can recoginse this//
-//generally we define the tools in a sepearate .py extenstion file 
-//now we define the loop and agent in chat.py which is sepearte with tools the code will have a loop while(true) until user clicks exit
+# //this is a random tool for an agent which looks up customers,check orders and processes refunds 
+# //the @tool is called as docstring and the tool returns a string which becomes the tool result fed back into the agent loop
+# @tool //making our function as tool by mentioning this tag meaning the agent can recoginse this//
+# //generally we define the tools in a sepearate .py extenstion file 
+# //now we define the loop and agent in chat.py which is sepearte with tools the code will have a loop while(true) until user clicks exit
 def lookup_customer(customer_id:str)->str:
     """
     Look up a customer by their ID //this line tells what tool does 
@@ -22,8 +22,8 @@ def lookup_customer(customer_id:str)->str:
     )
 
 
-//creating and running an agent
-//we have system prompt for each agent
+#creating and running an agent
+#we have system prompt for each agent
 SYSTEM_PROMPT="""
 you are a customer service agent for an online elctronics store be helpful,professional and concise.use the available tools to look up custom information and process request
 Important guidelines:
