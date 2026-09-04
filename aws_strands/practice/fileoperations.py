@@ -50,7 +50,5 @@ if __name__=="__main__":
               print(f"\nAn error occurred: {str(e)}")
               print("Please try a different request.")
 
-
-    
      
 
