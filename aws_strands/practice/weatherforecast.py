@@ -20,8 +20,6 @@ When retrieving weather information:
 
 Always explain weather conditions clearly and provide context.
 """
-
-
 model = OllamaModel(
     host="http://localhost:11434",
     model_id="llama3.2"
